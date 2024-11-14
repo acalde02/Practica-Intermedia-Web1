@@ -1,0 +1,92 @@
+/* Estilos para el contenedor principal */
+body {
+  margin: 0;
+  padding: 0;
+  background: url('https://wallpapers.com/images/featured/marvel-comic-book-background-0exuprkk5cwj6ail.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Bangers', cursive; /* Fuente general */
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+    font-size: 50px;
+  }
+  
+  /* Contenedor de la cuadrícula */
+  .comicsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Estilos para cada tarjeta de cómic */
+  .containerComic {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+  
+  /* Efecto hover para el contenedor */
+  .containerComic:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Título de cada cómic */
+  .containerComic h2 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  /* Estilo para las imágenes de los cómics */
+  .containerComic img {
+    width: 100%;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Efecto hover en la imagen del cómic */
+  .containerComic img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  .marvelComicsContainer {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para mayor contraste */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .loadMoreButton {
+    font-family: 'Bangers', cursive;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #e62429;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    transition: background-color 0.3s ease;
+  }
+  
+  .loadMoreButton:hover {
+    background-color: #ff4f4f;
+  }
+  

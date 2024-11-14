@@ -1,0 +1,61 @@
+/* Fondo del modal */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Contenido del modal */
+.modalContent {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+  text-align: center;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Lista de favoritos */
+.favoritesList {
+  list-style: none;
+  padding: 0;
+}
+
+.favoriteItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.favoriteImage {
+  width: 50px;
+  height: 75.5px;
+  border-radius: 4px;
+}
+
+.NoComics
+{
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 20px;
+}

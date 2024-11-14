@@ -1,0 +1,71 @@
+/* MarvelNavbar.css */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #202020;
+    padding: 10px 20px;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 50px;
+  }
+  
+  .search-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .search-input {
+    padding: 8px;
+    border: 2px solid #e62429;
+    border-radius: 4px;
+    outline: none;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .search-button {
+    background-color: #e62429;
+    border: none;
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #c91e25;
+  }
+  
+.favorites-button {
+    font-family: 'Bangers', cursive;
+    background: none;
+    border: none;
+    color: #e62429;
+    font-size: 1.6rem;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: color 0.3s;
+  }
+  
+  .favorites-button:hover {
+    color: #c91e25;
+  }
+  
+  .NoComics {
+    font-family: 'Bangers', cursive;
+    color: #333;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 30px;
+  }

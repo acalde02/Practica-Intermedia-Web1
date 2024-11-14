@@ -1,0 +1,109 @@
+/* Fondo del modal */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Contenido del modal */
+  .modalContent {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    width: 90%;
+    display: flex;
+    gap: 20px;
+    position: relative;
+  }
+  
+  /* Estilo de la imagen en el modal */
+  .modalImage {
+    width: 300px;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  /* Contenedor de la información del cómic */
+  .comicInfo {
+    flex: 1;
+  }
+  
+  /* Botón de cerrar */
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  /* Título y detalles del cómic */
+  .comicInfo h2 {
+    margin-top: 0;
+  }
+  
+  .comicInfo p, .comicInfo ul {
+    margin: 10px 0;
+  }
+  
+  .comicInfo ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .favoriteButton {
+    font-family: 'Bangers', cursive; /* Usa la fuente deseada */
+    font-size: 16px; /* Ajusta el tamaño del texto */
+    color: #fff;
+    background-color: #e62429; /* Rojo estilo Marvel */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px; /* Espaciado superior */
+    transition: background-color 0.3s ease;
+  }
+  
+  .favoriteButton:hover {
+    background-color: #ff4f4f; /* Más claro al hacer hover */
+  }
+  
+  .characterGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Grid dinámico */
+    gap: 10px;
+    margin-top: 10px;
+    max-height: 300px; /* Limita la altura */
+    overflow-y: auto; /* Desplazamiento vertical */
+  }
+  
+  .characterItem {
+    text-align: center;
+  }
+  
+  .characterImage {
+    width: 80px;
+    height: 80px;
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .characterItem p {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #333; /* Cambiado para mejor visibilidad */
+  }
+  
